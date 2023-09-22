@@ -1,7 +1,7 @@
 package design.strategy
 
-class MallardDuck : Duck(
-    FlyWithWings()
-) {
-
+class MallardDuck : Duck() {
+    init {
+        flyBehavior = FlyWithWings()
+    }
 }
