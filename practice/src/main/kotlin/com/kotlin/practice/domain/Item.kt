@@ -6,16 +6,12 @@ import javax.persistence.GenerationType
 import javax.persistence.Id
 
 @Entity
-class Member(
+class Item(
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         val id: Long? = null,
 
         var name: String,
-        var city: String,
-        var street: String,
-        var zipcode: String
-
-) {
-
-}
+        var price: Int,
+        var stockQuantity: Int
+) {}
